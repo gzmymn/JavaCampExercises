@@ -24,7 +24,7 @@ public class Main {
 		//addInstructor(instructorManager, instructor1);
 
 		studentManager.addAddress(student3, "Bursa");
-		System.out.println("-------------------");
+		System.out.println("..................");
 		studentManager.list(student1,student2,student3);
 		System.out.println("-------------------");
 		instructorManager.list(instructor1,instructor2, instructor3);
