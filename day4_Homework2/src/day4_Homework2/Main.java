@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 import day4_Homework2.abstracts.BaseCustomerManager;
 import day4_Homework2.adapters.MernisServiceAdapter;
-import day4_Homework2.concrete.CustomerCheckManager;
+
 import day4_Homework2.concrete.NeroCustomerManager;
 import day4_Homework2.concrete.StarbucksCustomerManager;
 import day4_Homework2.entities.Customer;
