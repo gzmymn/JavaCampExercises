@@ -50,7 +50,7 @@ public class Main {
 		// KAMPANYA GUNCELLEME
 		campaignManager.update(campaign1, game1);
 
-		// SATIÞ ÝSLEMLERÝ
+		// SATIS ISLEMLERI
 		SalesManager salesManager = new SalesManager();
 		// STANDART SATIS
 		salesManager.StandartSales(game1, gamer1);
