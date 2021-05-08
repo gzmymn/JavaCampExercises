@@ -22,19 +22,24 @@ public class UserManager implements UserService {
 
 	@Override
 	public void add(User user) {
+		if(userValidate(user)) {
 		userDao.add(user);	
 		System.out.println("Log: " + user.getEmail());
 		emailService.send(user.getEmail(), "You have registered.");
+		}
 		
 	}
 
 	@Override
 	public void add(String email) {
-		User user =new User();
+		
+		if(!email.isEmpty()) {
+		User user =new User();		
 		user.setEmail(email);
 		userDao.add(user);
 		System.out.println("Log2: " + user.getEmail());
 		emailService.send(email,"You have registered.");
+		}
 		
 	}
 
